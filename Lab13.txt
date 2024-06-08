@@ -1,0 +1,59 @@
+(a)
+
+{{x==y}} z:=x−y {{z==0}}
+
+Precondition: x==y
+
+Command:  z:=x−y
+
+Postcondition: z==0
+
+Before executing the command, we have the precondition x==y.
+The command z:=x−y sets z to the result of the expression x−y.
+Given the precondition x==y, the expression x−y evaluates to 0.
+Therefore, after the assignment, z will be 0.
+This makes the postcondition z==0 true.
+Hence, the triple {{x==y}} z:=x−y {{z==0}} holds.
+
+(b)
+
+{{true}} x:=100 {{x==100}}
+
+Precondition: true
+
+Command: x:=100
+
+Postcondition: x==100
+
+Explanation:
+
+The precondition is true, which means it holds unconditionally (there are no specific requirements before executing the command).
+The command x:=100 assigns the value 100 to x.
+After the assignment, x will indeed be 100.
+This makes the postcondition x==100 true.
+Hence, the triple {{true}} x:=100 {{x==100}} holds.
+
+(c)
+
+{{0≤x<100}} x:=x+1 {{0≤x≤100}}
+
+Precondition: 0≤x<100
+
+Command: x:=x+1
+
+Postcondition: 0≤x≤100
+
+Explanation:
+
+Before executing the command, we have the precondition 0≤x<100.
+The command x:=x+1 increments x by 1.
+Given the precondition, x is initially within the range [0,99].
+After the increment, x will be within the range [1,100].
+Therefore, after the assignment, x will satisfy the postcondition 0≤x≤100.
+Hence, the triple {{0≤x<100}} x:=x+1 {{0≤x≤100}} holds.
+
+
+
+
+
+
